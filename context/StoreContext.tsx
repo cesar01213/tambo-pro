@@ -138,16 +138,37 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     // 1. Cargar datos locales e inicializar sesión
     useEffect(() => {
         const init = async () => {
-            const savedCows = localStorage.getItem('tambo_cows');
-            const savedEvents = localStorage.getItem('tambo_events');
-            if (savedCows) setCows(JSON.parse(savedCows));
-            if (savedEvents) setEvents(JSON.parse(savedEvents));
+            try {
+                const savedCows = localStorage.getItem('tambo_cows');
+                const savedEvents = localStorage.getItem('tambo_events');
+                if (savedCows) setCows(JSON.parse(savedCows));
+                if (savedEvents) setEvents(JSON.parse(savedEvents));
 
-            const { data: { session } } = await supabase.auth.getSession();
-            if (session) {
-                await fetchUserProfile(session.user.id);
+                // Si la URL es la de placeholder, ni intentamos conectar
+                if (supabase.auth === undefined || (process.env.NEXT_PUBLIC_SUPABASE_URL || '').includes('placeholder')) {
+                    console.error('❌ Supabase no está configurado. Revisa las variables de entorno en Vercel.');
+                    setInitialized(true);
+                    return;
+                }
+
+                const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+
+                if (sessionError) {
+                    console.error('Error de sesión inicial:', JSON.stringify(sessionError));
+                }
+
+                if (session) {
+                    await fetchUserProfile(session.user.id);
+                }
+            } catch (err: any) {
+                if (err?.message?.includes('fetch')) {
+                    console.error('🌐 Error de Conexión: No se pudo contactar con Supabase. Revisa internet y las llaves de acceso.');
+                } else {
+                    console.error('Error crítico en inicialización:', err);
+                }
+            } finally {
+                setInitialized(true);
             }
-            setInitialized(true);
         };
         init();
     }, []);
