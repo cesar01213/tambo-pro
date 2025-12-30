@@ -469,14 +469,34 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         // 2. Alertas Reproductivas (Celo, Repetición, DEL alto)
         cows.forEach(cow => {
             const metrics = calculateMetrics(cow.id);
-            if (metrics.del > 300 && cow.estadoRepro !== 'Preñada' && cow.estado === 'Lactancia') {
-                alertas.push({
-                    id: `del-alto-${cow.id}`,
-                    tipo: 'urgente',
-                    mensaje: `Vaca ${cow.id} - DEL CRÍTICO (${metrics.del} días)`,
-                    accion: 'REVISAR POR QUÉ NO PREÑA',
-                    link: `/cows/${cow.id}`
-                });
+            if (cow.estado === 'Lactancia') {
+                if (cow.estadoRepro === 'Vacía' && metrics.del > 300) {
+                    alertas.push({
+                        id: `del-alto-${cow.id}`,
+                        tipo: 'urgente',
+                        mensaje: `Vaca ${cow.id} - DEL CRÍTICO (${metrics.del} días)`,
+                        accion: 'URGENTE: REVISAR POR QUÉ NO PREÑA',
+                        link: `/cows/${cow.id}`
+                    });
+                } else if (cow.estadoRepro === 'Inseminada') {
+                    if (metrics.del > 360) {
+                        alertas.push({
+                            id: `del-critico-ins-${cow.id}`,
+                            tipo: 'urgente',
+                            mensaje: `Vaca ${cow.id} - DEL MUY ALTO (${metrics.del} días)`,
+                            accion: 'POSIBLE FALLO DE PREÑEZ - TACTO URGENTE',
+                            link: `/cows/${cow.id}`
+                        });
+                    } else if (metrics.del > 300) {
+                        alertas.push({
+                            id: `del-atencion-ins-${cow.id}`,
+                            tipo: 'atencion',
+                            mensaje: `Vaca ${cow.id} - DEL ALTO (${metrics.del} días)`,
+                            accion: 'ESPERANDO TACTO (INSEMINADA)',
+                            link: `/cows/${cow.id}`
+                        });
+                    }
+                }
             }
         });
 

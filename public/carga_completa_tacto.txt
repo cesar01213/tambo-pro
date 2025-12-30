@@ -1,0 +1,1464 @@
+ID: 37
+RP: 37
+Estado: Lactancia
+Eventos:
+- 2025-05-05: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 39
+RP: 39
+Estado: Lactancia
+Eventos:
+- 2025-12-02: |tipo: parto|
+
+ID: 43
+RP: 43
+Estado: Lactancia
+Eventos:
+- 2025-08-26: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 53
+RP: 53
+Estado: Lactancia
+Eventos:
+- 2025-02-25: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 55
+RP: 55
+Estado: Lactancia
+Eventos:
+- 2025-01-03: |tipo: parto|
+- 2025-10-14: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 59
+RP: 59
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-07: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 60
+RP: 60
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-04: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 62
+RP: 62
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-04: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 63
+RP: 63
+Estado: Lactancia
+Eventos:
+- 2025-08-17: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 64
+RP: 64
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-02: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 66
+RP: 66
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-12-19: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 67
+RP: 67
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-21: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 68
+RP: 68
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-12-26: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 71
+RP: 71
+Estado: Lactancia
+Eventos:
+- 2025-05-07: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 73
+RP: 73
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-15: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 75
+RP: 75
+Estado: Lactancia
+Eventos:
+- 2025-08-24: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 76
+RP: 76
+Estado: Lactancia
+Eventos:
+- 2025-08-02: |tipo: parto|
+
+ID: 77
+RP: 77
+Estado: Lactancia
+Eventos:
+- 2025-07-16: |tipo: parto|
+
+ID: 78
+RP: 78
+Estado: Lactancia
+Eventos:
+- 2025-08-22: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 79
+RP: 79
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-26: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 80
+RP: 80
+Estado: Lactancia
+Eventos:
+- 2025-06-12: |tipo: parto|
+
+ID: 82
+RP: 82
+Estado: Lactancia
+Eventos:
+- 2025-10-31: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 1519
+RP: 1519
+Estado: Lactancia
+Eventos:
+- 2025-04-07: |tipo: parto|
+- 2025-06-17: |tipo: sanidad|detalle: VENTA|
+
+ID: 3473
+RP: 3473
+Estado: Lactancia
+Eventos:
+- 2025-04-28: |tipo: parto|
+- 2025-08-09: |tipo: sanidad|detalle: VENTA|
+
+ID: 3503
+RP: 3503
+Estado: Lactancia
+Eventos:
+- 2025-03-18: |tipo: parto|
+- 2025-10-14: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3511
+RP: 3511
+Estado: Lactancia
+Eventos:
+- 2024-06-08: |tipo: parto|
+- 2025-09-30: |tipo: sanidad|detalle: VENTA|
+
+ID: 3523
+RP: 3523
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-16: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3526
+RP: 3526
+Estado: Lactancia
+Eventos:
+- 2024-07-17: |tipo: parto|
+- 2025-09-10: |tipo: sanidad|detalle: VENTA|
+
+ID: 3536
+RP: 3536
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-05: |tipo: parto|
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3538
+RP: 3538
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-11-26: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3543
+RP: 3543
+Estado: Lactancia
+Eventos:
+- 2025-03-19: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3560
+RP: 3560
+Estado: Lactancia
+Eventos:
+- 2025-08-14: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3563
+RP: 3563
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-15: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3566
+RP: 3566
+Estado: Lactancia
+Eventos:
+- 2025-08-25: |tipo: parto|
+- 2025-09-30: |tipo: sanidad|detalle: VENTA|
+
+ID: 3568
+RP: 3568
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-07-01: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3569
+RP: 3569
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-02-15: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3574
+RP: 3574
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-01: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3576
+RP: 3576
+Estado: Lactancia
+Eventos:
+- 2025-11-04: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3580
+RP: 3580
+Estado: Lactancia
+Eventos:
+- 2025-08-11: |tipo: parto|
+- 2025-09-30: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3581
+RP: 3581
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-07-12: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3583
+RP: 3583
+Estado: Lactancia
+Eventos:
+- 2025-06-21: |tipo: parto|
+- 2025-11-25: |tipo: sanidad|detalle: VENTA|
+
+ID: 3588
+RP: 3588
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-24: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3590
+RP: 3590
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-24: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3597
+RP: 3597
+Estado: Lactancia
+Eventos:
+- 2022-11-10: |tipo: parto|
+- 2023-08-30: |tipo: sanidad|detalle: VENTA|
+
+ID: 3602
+RP: 3602
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-02: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3603
+RP: 3603
+Estado: Lactancia
+Eventos:
+- 2025-06-12: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3612
+RP: 3612
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-09: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3613
+RP: 3613
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-02-28: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3616
+RP: 3616
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-22: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3618
+RP: 3618
+Estado: Lactancia
+Eventos:
+- 2025-08-06: |tipo: parto|
+- 2025-10-14: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3620
+RP: 3620
+Estado: Lactancia
+Eventos:
+- 2024-12-08: |tipo: parto|
+- 2025-11-01: |tipo: sanidad|detalle: VENTA|
+
+ID: 3622
+RP: 3622
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-10-29: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3630
+RP: 3630
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-14: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3633
+RP: 3633
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-11-26: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3634
+RP: 3634
+Estado: Lactancia
+Eventos:
+- 2025-08-21: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3635
+RP: 3635
+Estado: Lactancia
+Eventos:
+- 2025-08-12: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3636
+RP: 3636
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-14: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3637
+RP: 3637
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-25: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3640
+RP: 3640
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-20: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3642
+RP: 3642
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-14: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3651
+RP: 3651
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-16: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3653
+RP: 3653
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-21: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3658
+RP: 3658
+Estado: Lactancia
+Eventos:
+- 2025-08-15: |tipo: parto|
+- 2025-09-30: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3662
+RP: 3662
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-02-24: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3663
+RP: 3663
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-12-21: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3667
+RP: 3667
+Estado: Lactancia
+Eventos:
+- 2024-11-05: |tipo: parto|
+- 2024-12-17: |tipo: sanidad|detalle: VENTA|
+
+ID: 3672
+RP: 3672
+Estado: Lactancia
+Eventos:
+- 2025-09-21: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3674
+RP: 3674
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-18: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3680
+RP: 3680
+Estado: Lactancia
+Eventos:
+- 2024-07-30: |tipo: parto|
+- 2025-12-09: |tipo: sanidad|detalle: VENTA|
+
+ID: 3681
+RP: 3681
+Estado: Lactancia
+Eventos:
+- 2025-10-07: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3682
+RP: 3682
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-20: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3684
+RP: 3684
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-02: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3686
+RP: 3686
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-11-13: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3688
+RP: 3688
+Estado: Lactancia
+Eventos:
+- 2025-02-17: |tipo: parto|
+- 2025-12-09: |tipo: sanidad|detalle: VENTA|
+
+ID: 3695
+RP: 3695
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-01: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3697
+RP: 3697
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-17: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3699
+RP: 3699
+Estado: Lactancia
+Eventos:
+- 2024-08-05: |tipo: parto|
+- 2025-07-14: |tipo: sanidad|detalle: VENTA|
+
+ID: 3700
+RP: 3700
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-08-19: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3702
+RP: 3702
+Estado: Lactancia
+Eventos:
+- 2025-10-26: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3704
+RP: 3704
+Estado: Lactancia
+Eventos:
+- 2025-09-15: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3705
+RP: 3705
+Estado: Lactancia
+Eventos:
+- 2025-04-25: |tipo: parto|
+- 2025-06-03: |tipo: sanidad|detalle: VENTA|
+
+ID: 3709
+RP: 3709
+Estado: Lactancia
+Eventos:
+- 2025-05-30: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3716
+RP: 3716
+Estado: Lactancia
+Eventos:
+- 2025-05-26: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3721
+RP: 3721
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-07-28: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3722
+RP: 3722
+Estado: Lactancia
+Eventos:
+- 2025-12-09: |tipo: parto|
+
+ID: 3726
+RP: 3726
+Estado: Lactancia
+Eventos:
+- 2024-11-26: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3727
+RP: 3727
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-10: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3728
+RP: 3728
+Estado: Lactancia
+Eventos:
+- 2025-10-13: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3729
+RP: 3729
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-09: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3735
+RP: 3735
+Estado: Lactancia
+Eventos:
+- 2025-03-24: |tipo: parto|
+- 2025-05-07: |tipo: sanidad|detalle: VENTA|
+
+ID: 3744
+RP: 3744
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-02-27: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3746
+RP: 3746
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-11: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3748
+RP: 3748
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-12-07: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3749
+RP: 3749
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2023-12-12: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3755
+RP: 3755
+Estado: Lactancia
+Eventos:
+- 2025-08-29: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3756
+RP: 3756
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-11-09: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3760
+RP: 3760
+Estado: Lactancia
+Eventos:
+- 2024-12-26: |tipo: parto|
+- 2025-01-28: |tipo: sanidad|detalle: VENTA|
+
+ID: 3761
+RP: 3761
+Estado: Lactancia
+Eventos:
+- 2025-06-04: |tipo: parto|
+
+ID: 3762
+RP: 3762
+Estado: Lactancia
+Eventos:
+- 2025-06-03: |tipo: parto|
+- 2025-10-31: |tipo: sanidad|detalle: VENTA|
+
+ID: 3763
+RP: 3763
+Estado: Lactancia
+Eventos:
+- 2025-06-23: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3764
+RP: 3764
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-23: |tipo: parto|
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3767
+RP: 3767
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-10: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3768
+RP: 3768
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-26: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3770
+RP: 3770
+Estado: Lactancia
+Eventos:
+- 2025-04-25: |tipo: parto|
+- 2025-06-03: |tipo: sanidad|detalle: VENTA|
+
+ID: 3771
+RP: 3771
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-16: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3773
+RP: 3773
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-11: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3774
+RP: 3774
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-23: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3776
+RP: 3776
+Estado: Lactancia
+Eventos:
+- 2025-07-16: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3780
+RP: 3780
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-21: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3782
+RP: 3782
+Estado: Lactancia
+Eventos:
+- 2025-06-21: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3783
+RP: 3783
+Estado: Lactancia
+Eventos:
+- 2024-05-22: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3784
+RP: 3784
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-06-07: |tipo: parto|
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3786
+RP: 3786
+Estado: Lactancia
+Eventos:
+- 2024-06-09: |tipo: parto|
+- 2024-10-10: |tipo: sanidad|detalle: VENTA|
+
+ID: 3787
+RP: 3787
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-06-16: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3789
+RP: 3789
+Estado: Lactancia
+Eventos:
+- 2024-04-24: |tipo: parto|
+- 2024-10-01: |tipo: sanidad|detalle: VENTA|
+
+ID: 3790
+RP: 3790
+Estado: Lactancia
+Eventos:
+- 2025-07-28: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3791
+RP: 3791
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-24: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3792
+RP: 3792
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-05-02: |tipo: parto|
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3796
+RP: 3796
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-25: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3797
+RP: 3797
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-05-11: |tipo: parto|
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3800
+RP: 3800
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-27: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3802
+RP: 3802
+Estado: Lactancia
+Eventos:
+- 2025-08-30: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3803
+RP: 3803
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-06-08: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3804
+RP: 3804
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-04: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3805
+RP: 3805
+Estado: Lactancia
+Eventos:
+- 2025-07-26: |tipo: parto|
+
+ID: 3810
+RP: 3810
+Estado: Lactancia
+Eventos:
+- 2025-10-08: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3815
+RP: 3815
+Estado: Lactancia
+Eventos:
+- 2025-07-01: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3818
+RP: 3818
+Estado: Lactancia
+Eventos:
+- 2025-08-11: |tipo: parto|
+- 2025-10-14: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3819
+RP: 3819
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-09: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3820
+RP: 3820
+Estado: Lactancia
+Eventos:
+- 2025-08-29: |tipo: parto|
+- 2025-10-14: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3823
+RP: 3823
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-13: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3825
+RP: 3825
+Estado: Lactancia
+Eventos:
+- 2025-07-29: |tipo: parto|
+- 2025-09-30: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3827
+RP: 3827
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-25: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3828
+RP: 3828
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-07-21: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3830
+RP: 3830
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-18: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3831
+RP: 3831
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-09-01: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3833
+RP: 3833
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-09-10: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3836
+RP: 3836
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-12-31: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3840
+RP: 3840
+Estado: Lactancia
+Eventos:
+- 2024-10-19: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3841
+RP: 3841
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-12-04: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3844
+RP: 3844
+Estado: Lactancia
+Eventos:
+- 2025-08-22: |tipo: parto|
+- 2025-09-30: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3845
+RP: 3845
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2024-11-27: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3847
+RP: 3847
+Estado: Lactancia
+Eventos:
+- 2025-11-15: |tipo: parto|
+
+ID: 3852
+RP: 3852
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-20: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3853
+RP: 3853
+Estado: Lactancia
+Eventos:
+- 2024-12-08: |tipo: parto|
+- 2025-05-20: |tipo: sanidad|detalle: VENTA|
+
+ID: 3857
+RP: 3857
+Estado: Lactancia
+Eventos:
+- 2025-04-23: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3858
+RP: 3858
+Estado: Lactancia
+Eventos:
+- 2024-12-21: |tipo: parto|
+- 2025-05-20: |tipo: sanidad|detalle: VENTA|
+
+ID: 3863
+RP: 3863
+Estado: Lactancia
+Eventos:
+- 2025-11-25: |tipo: parto|
+
+ID: 3864
+RP: 3864
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-15: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3866
+RP: 3866
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-03: |tipo: parto|
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3868
+RP: 3868
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-25: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3870
+RP: 3870
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-02: |tipo: parto|
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3872
+RP: 3872
+Estado: Lactancia
+Eventos:
+- 2025-03-06: |tipo: parto|
+
+ID: 3875
+RP: 3875
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-12: |tipo: parto|
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3878
+RP: 3878
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-26: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3879
+RP: 3879
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-11: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3880
+RP: 3880
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-16: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3881
+RP: 3881
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-03-28: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3882
+RP: 3882
+Estado: Lactancia
+Eventos:
+- 2025-03-18: |tipo: parto|
+- 2025-10-31: |tipo: sanidad|detalle: VENTA|
+
+ID: 3883
+RP: 3883
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-22: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3884
+RP: 3884
+Estado: Lactancia
+Eventos:
+- 2025-03-29: |tipo: parto|
+- 2025-09-30: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3886
+RP: 3886
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-04-23: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3887
+RP: 3887
+Estado: Lactancia
+Eventos:
+- 2025-05-15: |tipo: parto|
+- 2025-09-30: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3888
+RP: 3888
+Estado: Lactancia
+Eventos:
+- 2025-05-07: |tipo: parto|
+
+ID: 3892
+RP: 3892
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-27: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3893
+RP: 3893
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-23: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3894
+RP: 3894
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-11: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3896
+RP: 3896
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-10: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3900
+RP: 3900
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-28: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3902
+RP: 3902
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-15: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3904
+RP: 3904
+Estado: Lactancia
+Eventos:
+- 2025-07-05: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3906
+RP: 3906
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-06-15: |tipo: parto|
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+
+ID: 3908
+RP: 3908
+Estado: Lactancia
+Eventos:
+- 2025-08-27: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3913
+RP: 3913
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-29: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3914
+RP: 3914
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-29: |tipo: parto|
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+
+ID: 3915
+RP: 3915
+Estado: Lactancia
+Eventos:
+- 2025-06-21: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3916
+RP: 3916
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-05-09: |tipo: parto|
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+
+ID: 3924
+RP: 3924
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-26: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3925
+RP: 3925
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-07-09: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3931
+RP: 3931
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-07-13: |tipo: parto|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+
+ID: 3934
+RP: 3934
+Estado: Lactancia
+Eventos:
+- 2025-10-22: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3937
+RP: 3937
+Estado: Lactancia
+Eventos:
+- 2025-12-02: |tipo: parto|
+
+ID: 3938
+RP: 3938
+Estado: Lactancia
+Eventos:
+- 2025-08-12: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3939
+RP: 3939
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-07-08: |tipo: parto|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+
+ID: 3940
+RP: 3940
+Estado: Lactancia
+Eventos:
+- 2025-09-05: |tipo: parto|
+- 2025-12-09: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3942
+RP: 3942
+Estado: Lactancia
+Eventos:
+- 2025-10-30: |tipo: parto|
+- 2025-11-11: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3944
+RP: 3944
+Estado: Lactancia
+Eventos:
+- 2025-09-01: |tipo: parto|
+- 2025-10-14: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3945
+RP: 3945
+Estado: Lactancia
+Eventos:
+- 2025-09-29: |tipo: parto|
+- 2025-11-11: |tipo: sanidad|detalle: VENTA|
+
+ID: 3946
+RP: 3946
+Estado: Lactancia
+Eventos:
+- 2025-08-28: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3947
+RP: 3947
+Estado: Lactancia
+Eventos:
+- 2025-08-20: |tipo: parto|
+- 2025-10-31: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3949
+RP: 3949
+Estado: Lactancia
+Eventos:
+- 2025-10-24: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3950
+RP: 3950
+Estado: Lactancia
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-18: |tipo: parto|
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+
+ID: 3956
+RP: 3956
+Estado: Lactancia
+Eventos:
+- 2025-10-23: |tipo: parto|
+- 2025-11-25: |tipo: inseminacion|detalle: HARVEY|
+
+ID: 3962
+RP: 3962
+Estado: Lactancia
+Eventos:
+- 2025-11-24: |tipo: parto|
+
+ID: 3963
+RP: 3963
+Estado: Lactancia
+Eventos:
+- 2025-12-05: |tipo: parto|
+
+ID: 3970
+RP: 3970
+Estado: Lactancia
+Eventos:
+- 2025-12-04: |tipo: parto|
+
+ID: 3975
+RP: 3975
+Estado: Lactancia
+Eventos:
+- 2025-11-23: |tipo: parto|

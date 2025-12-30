@@ -133,9 +133,17 @@ export default function BulkLoader({ isOpen, onClose }: Props) {
                 if (event.tipo === 'parto') {
                     currentCow.estado = 'Lactancia';
                     currentCow.ultimoParto = event.fecha;
+                    currentCow.estadoRepro = 'Vacía'; // Al parir está vacía
                 }
-                if (event.tipo === 'tacto' && event.resultadoTacto === 'Preñada') {
-                    currentCow.estadoRepro = 'Preñada';
+                if (event.tipo === 'inseminacion') {
+                    currentCow.estadoRepro = 'Inseminada';
+                }
+                if (event.tipo === 'tacto') {
+                    if (event.resultadoTacto === 'Preñada') {
+                        currentCow.estadoRepro = 'Preñada';
+                    } else if (event.resultadoTacto === 'Vacía') {
+                        currentCow.estadoRepro = 'Vacía';
+                    }
                 }
             }
         });
