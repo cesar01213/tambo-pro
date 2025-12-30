@@ -125,6 +125,7 @@ export default function BulkLoader({ isOpen, onClose }: Props) {
                     if (key === 'fechaLiberacion') event.fechaLiberacion = val;
                     if (key === 'resultado') event.resultadoTacto = val as any;
                     if (key === 'mesesGesta') event.mesesGestacion = parseInt(val);
+                    if (key === 'toro') event.toro = val;
                 });
 
                 events.push(event);
