@@ -3,11 +3,12 @@
 import { useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useStore } from '@/context/StoreContext';
-import { Building2, Plus, ArrowRight, LogOut } from 'lucide-react';
+import { Building2, Plus, ArrowRight, LogOut, Link as LinkIcon } from 'lucide-react';
 
 export default function EstablishmentSetup() {
     const { userProfile } = useStore();
     const [nombre, setNombre] = useState('');
+    const [joinCode, setJoinCode] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 
@@ -42,10 +43,48 @@ export default function EstablishmentSetup() {
 
             if (profError) throw profError;
 
-            // Recargar la página para activar el StoreContext con el nuevo ID
             window.location.reload();
         } catch (err: any) {
             setError(err.message || 'Error al crear el establecimiento');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleJoin = async (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!joinCode.trim()) return;
+        setLoading(true);
+        setError('');
+
+        try {
+            const { data: { user } } = await supabase.auth.getUser();
+            if (!user) throw new Error('No hay sesión activa');
+
+            // 1. Verificar si el establecimiento existe
+            const { data: est, error: estError } = await supabase
+                .from('establecimientos')
+                .select('id, nombre')
+                .eq('id', joinCode.trim())
+                .single();
+
+            if (estError || !est) throw new Error('El código de establecimiento no es válido.');
+
+            // 2. Asociar al usuario
+            const { error: profError } = await supabase
+                .from('profiles')
+                .upsert({
+                    id: user.id,
+                    establecimiento_id: est.id,
+                    role: userProfile?.role || 'tambero', // Mantener rol si ya tiene uno
+                    email: user.email
+                });
+
+            if (profError) throw profError;
+
+            window.location.reload();
+        } catch (err: any) {
+            setError(err.message || 'Error al vincularse al establecimiento');
         } finally {
             setLoading(false);
         }
@@ -68,61 +107,72 @@ export default function EstablishmentSetup() {
                     <div className="bg-indigo-600 w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-indigo-900/40 transform -rotate-12 animate-in zoom-in-50 duration-500">
                         <Building2 className="w-10 h-10 text-white" />
                     </div>
-                    <h1 className="text-3xl font-black text-white tracking-tighter italic">BIENVENIDO A <span className="text-indigo-400">PRO</span></h1>
-                    <p className="text-slate-400 text-xs font-bold uppercase tracking-widest mt-2">Configuración Inicial</p>
+                    <h1 className="text-3xl font-black text-white tracking-tighter italic uppercase">Tambo <span className="text-indigo-400">Pro</span></h1>
+                    <p className="text-slate-400 text-xs font-black uppercase tracking-[0.2em] mt-2 leading-none">Configuración de Acceso</p>
                 </div>
 
-                <div className="p-10 space-y-8">
-                    {userProfile?.role === 'admin' ? (
-                        <form onSubmit={handleCreate} className="space-y-6">
-                            <div>
-                                <h2 className="text-xl font-black text-slate-800 italic tracking-tighter mb-2">Creá tu Tambo</h2>
-                                <p className="text-slate-500 text-xs font-medium leading-relaxed">
-                                    Para empezar a cargar tus vacas, necesitamos que le pongas un nombre a tu establecimiento.
-                                </p>
+                <div className="p-10 space-y-10">
+                    {/* SECCIÓN CREAR (Solo para el que inicia) */}
+                    <div className="space-y-6">
+                        <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 shadow-sm border border-indigo-100">
+                                <Plus className="w-5 h-5" />
                             </div>
-
-                            <div className="space-y-4">
-                                <div className="space-y-2">
-                                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Nombre del Establecimiento</label>
-                                    <input
-                                        type="text"
-                                        value={nombre}
-                                        onChange={(e) => setNombre(e.target.value)}
-                                        placeholder="Ej: La Esperanza, Tambo El Trebol..."
-                                        className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl p-4 font-bold text-slate-800 focus:border-indigo-600 outline-none transition-all placeholder:text-slate-300"
-                                        required
-                                    />
-                                </div>
-                            </div>
-
-                            {error && (
-                                <p className="text-red-500 text-[10px] font-black uppercase text-center bg-red-50 p-3 rounded-xl border border-red-100 italic">
-                                    ⚠️ {error}
-                                </p>
-                            )}
-
+                            <h2 className="text-lg font-black text-slate-800 uppercase italic tracking-tighter leading-none">Nuevo Establecimiento</h2>
+                        </div>
+                        <form onSubmit={handleCreate} className="space-y-4">
+                            <input
+                                type="text"
+                                value={nombre}
+                                onChange={(e) => setNombre(e.target.value)}
+                                placeholder="Nombre (Ej: La Esperanza)"
+                                className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl p-4 font-bold text-slate-800 focus:border-indigo-600 outline-none transition-all placeholder:text-slate-300 text-sm"
+                            />
                             <button
                                 type="submit"
-                                disabled={loading}
-                                className="w-full bg-indigo-600 text-white py-5 rounded-3xl font-black text-sm uppercase tracking-widest shadow-xl shadow-indigo-900/20 active:scale-95 transition-all flex items-center justify-center gap-3 disabled:opacity-50"
+                                disabled={loading || !!joinCode}
+                                className="w-full bg-indigo-600 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg active:scale-95 transition-all flex items-center justify-center gap-3 disabled:opacity-30"
                             >
-                                {loading ? 'Creando...' : 'Crear mi Tambo'}
-                                <ArrowRight className="w-5 h-5" />
+                                CREAR MI TAMBO
                             </button>
                         </form>
-                    ) : (
-                        <div className="text-center space-y-6">
-                            <div className="bg-amber-50 p-6 rounded-3xl border-2 border-amber-100">
-                                <h2 className="text-lg font-black text-amber-800 italic tracking-tighter mb-2">Acceso de Personal</h2>
-                                <p className="text-amber-700 text-xs font-medium leading-relaxed">
-                                    Tu cuenta está configurada como **Personal**. El Administrador de tu tambo debe asignarte a un establecimiento para que puedas ver el rodeo.
-                                </p>
+                    </div>
+
+                    <div className="relative">
+                        <div className="absolute inset-0 flex items-center"><span className="w-full border-t border-slate-200"></span></div>
+                        <div className="relative flex justify-center text-xs uppercase"><span className="bg-white px-4 text-slate-400 font-black tracking-widest leading-none">O TAMBIÉN</span></div>
+                    </div>
+
+                    {/* SECCIÓN UNIRSE (Para el personal) */}
+                    <div className="space-y-6">
+                        <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 shadow-sm border border-emerald-100">
+                                <LinkIcon className="w-5 h-5" />
                             </div>
-                            <p className="text-slate-400 text-[10px] font-black uppercase italic">
-                                Contactá al dueño para que te habilite el acceso.
-                            </p>
+                            <h2 className="text-lg font-black text-slate-800 uppercase italic tracking-tighter leading-none">Unirse a Equipo</h2>
                         </div>
+                        <form onSubmit={handleJoin} className="space-y-4">
+                            <input
+                                type="text"
+                                value={joinCode}
+                                onChange={(e) => setJoinCode(e.target.value)}
+                                placeholder="Pegá el código del tambo aquí..."
+                                className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl p-4 font-bold text-slate-800 focus:border-emerald-600 outline-none transition-all placeholder:text-slate-300 text-sm uppercase"
+                            />
+                            <button
+                                type="submit"
+                                disabled={loading || !!nombre}
+                                className="w-full bg-emerald-600 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg active:scale-95 transition-all flex items-center justify-center gap-3 disabled:opacity-30"
+                            >
+                                VINCULARME AHORA
+                            </button>
+                        </form>
+                    </div>
+
+                    {error && (
+                        <p className="text-red-500 text-[10px] font-black uppercase text-center bg-red-50 p-3 rounded-xl border border-red-100 italic animate-pulse">
+                            ⚠️ {error}
+                        </p>
                     )}
                 </div>
             </div>

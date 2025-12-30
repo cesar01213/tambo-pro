@@ -76,7 +76,7 @@ export default function TeamManagementModal({ isOpen, onClose }: { isOpen: boole
                                 <div key={member.id} className="bg-slate-50 p-6 rounded-[2.5rem] border-2 border-slate-100 space-y-4">
                                     <div className="flex items-center gap-4">
                                         <div className={`w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg ${member.role === 'admin' ? 'bg-indigo-600 text-white' :
-                                                member.role === 'tambero' ? 'bg-emerald-600 text-white' : 'bg-amber-600 text-white'
+                                            member.role === 'tambero' ? 'bg-emerald-600 text-white' : 'bg-amber-600 text-white'
                                             }`}>
                                             {member.role === 'admin' ? <Shield className="w-7 h-7" /> :
                                                 member.role === 'tambero' ? <UserCheck className="w-7 h-7" /> : <HardHat className="w-7 h-7" />}
@@ -90,7 +90,7 @@ export default function TeamManagementModal({ isOpen, onClose }: { isOpen: boole
                                                 {member.id === userProfile?.id ? 'Tú (Propietario)' : 'Personal del Tambo'}
                                             </h4>
                                             <span className={`inline-block mt-2 px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest ${member.role === 'admin' ? 'bg-indigo-100 text-indigo-700' :
-                                                    member.role === 'tambero' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'
+                                                member.role === 'tambero' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'
                                                 }`}>
                                                 Rango: {member.role}
                                             </span>
@@ -127,10 +127,26 @@ export default function TeamManagementModal({ isOpen, onClose }: { isOpen: boole
                                 </div>
                             )}
 
-                            <div className="bg-indigo-50 p-6 rounded-3xl border-2 border-indigo-100 text-center space-y-2">
-                                <p className="text-[9px] font-black text-indigo-900 uppercase tracking-widest">¿Cómo agregar gente?</p>
-                                <p className="text-[11px] text-indigo-700 font-medium leading-relaxed">
-                                    Pediles que se registren en la app con su email. Una vez registrados, aparecerán acá y podrás asignarles su rango.
+                            <div className="bg-indigo-50 p-6 rounded-[2.5rem] border-2 border-indigo-100 space-y-4">
+                                <div>
+                                    <p className="text-[9px] font-black text-indigo-900 uppercase tracking-[0.3em] mb-2 text-center">Código de Mi Establecimiento</p>
+                                    <div className="bg-white border-2 border-indigo-200 p-4 rounded-2xl flex items-center justify-between gap-3 shadow-sm">
+                                        <code className="text-[10px] font-black text-indigo-600 truncate flex-1 uppercase tracking-tighter">
+                                            {userProfile?.establecimientoId}
+                                        </code>
+                                        <button
+                                            onClick={() => {
+                                                navigator.clipboard.writeText(userProfile?.establecimientoId || '');
+                                                alert('¡Código copiado! Pasáselo a tu equipo.');
+                                            }}
+                                            className="bg-indigo-600 text-white px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest active:scale-90 transition-all shadow-md"
+                                        >
+                                            COPIAR
+                                        </button>
+                                    </div>
+                                </div>
+                                <p className="text-[11px] text-indigo-700 font-medium leading-relaxed text-center px-2">
+                                    Copiá y pasales este código a tus colaboradores. Ellos podrán pegarlo al entrar a la app para vincularse a tu tambo.
                                 </p>
                             </div>
                         </div>
