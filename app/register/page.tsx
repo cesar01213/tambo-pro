@@ -24,7 +24,7 @@ export default function RegisterPage() {
         }
 
         try {
-            const { error } = await supabase.auth.signUp({
+            const { data, error } = await supabase.auth.signUp({
                 email,
                 password,
             });
@@ -33,8 +33,13 @@ export default function RegisterPage() {
                 setError(error.message);
                 setLoading(false);
             } else {
-                setSuccess(true);
-                setLoading(false);
+                // Si la confirmación está desactivada en Supabase, signUp devuelve una sesión inmediatamente
+                if (data.session) {
+                    window.location.href = '/';
+                } else {
+                    setSuccess(true);
+                    setLoading(false);
+                }
             }
         } catch (err: any) {
             setError('Error de Conexión: No se pudo contactar con el servidor. Revisá tu internet o verificá que la app esté cargando las llaves correctamente.');
