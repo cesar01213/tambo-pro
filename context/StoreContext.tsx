@@ -471,15 +471,18 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
             const metrics = calculateMetrics(cow.id);
             if (cow.estado === 'Lactancia') {
                 // INTELLIGENCE: Si se le hizo algo hace poco (tacto o inseminación), no alertar
-                const reproductiveEvents = events.filter(e =>
-                    e.cowId === cow.id && (e.tipo === 'tacto' || e.tipo === 'inseminacion')
-                );
+                const reproductiveEvents = events
+                    .filter(e => e.cowId === cow.id && (e.tipo === 'tacto' || e.tipo === 'inseminacion'))
+                    .sort((a, b) => new Date(b.fecha).getTime() - new Date(a.fecha).getTime());
+
                 const lastReproEvent = reproductiveEvents.length > 0
                     ? parseISO(reproductiveEvents[0].fecha)
                     : null;
-                const handledRecently = lastReproEvent && differenceInDays(hoy, lastReproEvent) < 45;
 
-                if (handledRecently) return; // Si se vio hace menos de 45 días, está ok
+                // Si se vio hace menos de 90 días (ej: el último tacto del archivo), no alertar como Crítico
+                const handledRecently = lastReproEvent && differenceInDays(hoy, lastReproEvent) < 90;
+
+                if (handledRecently) return;
 
                 if (cow.estadoRepro === 'Vacía' && metrics.del > 300) {
                     alertas.push({

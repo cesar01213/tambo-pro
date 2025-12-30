@@ -104,7 +104,10 @@ export default function Home() {
         <div className="flex justify-between items-start mb-8">
           <div>
             <h1 className="text-3xl font-black tracking-tighter italic leading-none">TAMBO<span className="text-indigo-400">PRO</span></h1>
-            <p className="text-slate-400 text-[9px] font-black uppercase tracking-[0.3em] mt-1 opacity-70">Operaciones en Tiempo Real</p>
+            <div className="flex items-center gap-2 mt-1">
+              <p className="text-slate-400 text-[9px] font-black uppercase tracking-[0.3em] opacity-70">Operaciones en Tiempo Real</p>
+              <span className="text-[7px] bg-white/10 px-2 py-0.5 rounded-full text-white/40 font-mono">v2.8.2-rev1</span>
+            </div>
           </div>
           <div className="flex gap-2">
             {userProfile?.role === 'admin' && (
