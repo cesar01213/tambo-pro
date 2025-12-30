@@ -29,7 +29,13 @@ export default function LoginPage() {
             });
 
             if (error) {
-                setError('Credenciales incorrectas. Revisá tu email y contraseña.');
+                if (error.message.includes('Email not confirmed')) {
+                    setError('Falta confirmar tu cuenta. Por favor revisá tu email y hacé clic en el link de confirmación.');
+                } else if (error.message.includes('Invalid login credentials')) {
+                    setError('Credenciales incorrectas. Revisá tu email y contraseña.');
+                } else {
+                    setError(error.message);
+                }
                 setLoading(false);
             } else {
                 window.location.href = '/';
