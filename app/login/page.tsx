@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { supabase } from '@/lib/supabase';
-import { Lock, Mail, ChevronRight, ShieldCheck, Activity, UserPlus, LifeBuoy } from 'lucide-react';
+import { Lock, Mail, ChevronRight, ShieldCheck, Activity, UserPlus, LifeBuoy, Users } from 'lucide-react';
 
 export default function LoginPage() {
     const [email, setEmail] = useState('');
@@ -148,6 +148,29 @@ export default function LoginPage() {
                         </button>
                     </div>
                 </form>
+
+                <div className="relative py-8">
+                    <div className="absolute inset-0 flex items-center">
+                        <span className="w-full border-t border-white/5"></span>
+                    </div>
+                    <div className="relative flex justify-center text-[10px] uppercase">
+                        <span className="bg-slate-900 px-4 text-slate-500 font-black tracking-[0.3em]">O entrar sin email</span>
+                    </div>
+                </div>
+
+                <button
+                    onClick={async () => {
+                        setLoading(true);
+                        const { error } = await supabase.auth.signInAnonymously();
+                        if (error) setError(error.message);
+                        setLoading(false);
+                    }}
+                    disabled={loading}
+                    className="w-full bg-indigo-600/10 text-indigo-400 border-2 border-indigo-600/30 py-5 rounded-[2.5rem] font-black text-xs uppercase tracking-widest hover:bg-indigo-600/20 transition-all flex items-center justify-center gap-3 active:scale-[0.98] disabled:opacity-30"
+                >
+                    <Users className="w-5 h-5" />
+                    <span>ENTRAR COMO PERSONAL (CON CÓDIGO)</span>
+                </button>
 
                 <div className="text-center mt-8 space-y-4">
                     <Link href="/register" className="text-indigo-400 text-xs font-black uppercase tracking-widest hover:text-indigo-300 transition-all flex items-center justify-center gap-2">
