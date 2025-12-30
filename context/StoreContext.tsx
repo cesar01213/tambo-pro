@@ -470,6 +470,17 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         cows.forEach(cow => {
             const metrics = calculateMetrics(cow.id);
             if (cow.estado === 'Lactancia') {
+                // INTELLIGENCE: Si se le hizo algo hace poco (tacto o inseminación), no alertar
+                const reproductiveEvents = events.filter(e =>
+                    e.cowId === cow.id && (e.tipo === 'tacto' || e.tipo === 'inseminacion')
+                );
+                const lastReproEvent = reproductiveEvents.length > 0
+                    ? parseISO(reproductiveEvents[0].fecha)
+                    : null;
+                const handledRecently = lastReproEvent && differenceInDays(hoy, lastReproEvent) < 45;
+
+                if (handledRecently) return; // Si se vio hace menos de 45 días, está ok
+
                 if (cow.estadoRepro === 'Vacía' && metrics.del > 300) {
                     alertas.push({
                         id: `del-alto-${cow.id}`,
