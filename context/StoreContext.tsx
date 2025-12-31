@@ -558,10 +558,46 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
 
     const toggleLock = () => setIsLocked(!isLocked);
 
-    const clearAllData = () => {
+    const clearAllData = async () => {
+        // 1. Seguridad: Si está bloqueado o no hay usuario, no hacer nada
         if (isLocked) return;
-        setCows([]);
-        setEvents([]);
+        if (!userProfile?.establecimientoId) return;
+
+        const confirmacion = window.confirm("⚠️ ¿ESTÁS SEGURO? Esto borrará TODAS las vacas y eventos de la base de datos permanentemente.");
+        if (!confirmacion) return;
+
+        try {
+            // 2. Limpiar estado visual inmediatamente (para que el usuario vea respuesta rápida)
+            setCows([]);
+            setEvents([]);
+
+            // 3. Limpiar LocalStorage explícitamente
+            localStorage.removeItem('tambo_cows');
+            localStorage.removeItem('tambo_events');
+
+            // 4. BORRAR DE LA NUBE (Supabase) - ¡El paso que faltaba!
+            // Primero borramos eventos para evitar problemas de claves foráneas
+            const { error: evError } = await supabase
+                .from('events')
+                .delete()
+                .eq('establecimiento_id', userProfile.establecimientoId);
+
+            // Luego borramos las vacas
+            const { error: cowError } = await supabase
+                .from('cows')
+                .delete()
+                .eq('establecimiento_id', userProfile.establecimientoId);
+
+            if (evError || cowError) {
+                console.error("Error al borrar en la nube:", evError, cowError);
+                alert("Ocurrió un error al borrar los datos de la nube. Revisa tu conexión.");
+            } else {
+                alert("🧹 Todos los datos han sido eliminados correctamente.");
+            }
+
+        } catch (error) {
+            console.error("Error crítico:", error);
+        }
     };
 
     return (
