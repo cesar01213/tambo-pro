@@ -1,26 +1,3 @@
-ID: 3894
-RP: 3894
-Lactancia: 1
-Ultima: 2025-06-11
-FPP: 2026-06-18
-Eventos:
-- 2025-09-13: |tipo: inseminacion|toro: MOLOKO|servicios: 1|
-- 2025-10-31: |tipo: tacto|resultado: Preñada|
-- 2025-10-21: |tipo: controlLechero|litros: 35|
-- 2025-11-06: |tipo: controlLechero|litros: 36|
-- 2025-11-24: |tipo: controlLechero|litros: 38|
-
-ID: 3904
-RP: 3904
-Lactancia: 1
-Ultima: 2025-07-05
-Eventos:
-- 2025-11-01: |tipo: inseminacion|toro: IKON|servicios: 4|
-- 2025-12-09: |tipo: tacto|resultado: Preñada|
-- 2025-10-21: |tipo: controlLechero|litros: 20|
-- 2025-11-06: |tipo: controlLechero|litros: 34|
-- 2025-11-24: |tipo: controlLechero|litros: 33|
-
 ID: 37
 RP: 37
 Lactancia: 4
@@ -32,6 +9,23 @@ Eventos:
 - 2025-11-06: |tipo: controlLechero|litros: 41|
 - 2025-11-24: |tipo: controlLechero|litros: 34|
 
+ID: 39
+RP: 39
+Ultima: 2025-12-02
+Eventos:
+- 2025-10-21: |tipo: controlLechero|litros: 52|
+- 2025-11-06: |tipo: controlLechero|litros: 50|
+- 2025-11-24: |tipo: controlLechero|litros: 24|
+
+ID: 43
+RP: 43
+Ultima: 2025-08-26
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 46|
+- 2025-11-06: |tipo: controlLechero|litros: 43|
+- 2025-11-24: |tipo: controlLechero|litros: 45|
+
 ID: 53
 RP: 53
 Lactancia: 2
@@ -41,6 +35,175 @@ Eventos:
 - 2025-12-09: |tipo: tacto|resultado: Vacía|detalle: HARVEY|
 - 2025-10-21: |tipo: controlLechero|litros: 36|
 - 2025-11-06: |tipo: controlLechero|litros: 33|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 55
+RP: 55
+Ultima: 2025-01-03
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 45|
+- 2025-11-06: |tipo: controlLechero|litros: 41|
+- 2025-11-24: |tipo: controlLechero|litros: 40|
+
+ID: 59
+RP: 59
+Ultima: 2025-03-07
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: PreÃ±ada|toro: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 39|
+- 2025-11-06: |tipo: controlLechero|litros: 32|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 60
+RP: 60
+Ultima: 2025-03-04
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 40|
+- 2025-11-06: |tipo: controlLechero|litros: 32|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 62
+RP: 62
+Ultima: 2025-03-04
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 49|
+- 2025-11-06: |tipo: controlLechero|litros: 50|
+- 2025-11-24: |tipo: controlLechero|litros: 47|
+
+ID: 63
+RP: 63
+Ultima: 2025-08-17
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 24|
+- 2025-11-06: |tipo: controlLechero|litros: 24|
+- 2025-11-24: |tipo: controlLechero|litros: 25|
+
+ID: 64
+RP: 64
+Ultima: 2025-04-02
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 38|
+- 2025-11-06: |tipo: controlLechero|litros: 30|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 66
+RP: 66
+Ultima: 2024-12-19
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 26|
+- 2025-11-06: |tipo: controlLechero|litros: 31|
+- 2025-11-24: |tipo: controlLechero|litros: 26|
+
+ID: 67
+RP: 67
+Ultima: 2025-03-21
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 30|
+- 2025-11-06: |tipo: controlLechero|litros: 38|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 68
+RP: 68
+Ultima: 2024-12-26
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 41|
+- 2025-11-06: |tipo: controlLechero|litros: 45|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 71
+RP: 71
+Ultima: 2025-05-07
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 35|
+- 2025-11-06: |tipo: controlLechero|litros: 35|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 73
+RP: 73
+Ultima: 2025-05-15
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 35|
+- 2025-11-06: |tipo: controlLechero|litros: 35|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 75
+RP: 75
+Ultima: 2025-08-24
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 30|
+- 2025-11-06: |tipo: controlLechero|litros: 32|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 76
+RP: 76
+Ultima: 2025-08-02
+Eventos:
+- 2025-10-21: |tipo: controlLechero|litros: 32|
+- 2025-11-06: |tipo: controlLechero|litros: 28|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 77
+RP: 77
+Ultima: 2025-07-16
+Eventos:
+- 2025-10-21: |tipo: controlLechero|litros: 30|
+- 2025-11-06: |tipo: controlLechero|litros: 27|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 78
+RP: 78
+Ultima: 2025-08-22
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 34|
+- 2025-11-06: |tipo: controlLechero|litros: 30|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 79
+RP: 79
+Ultima: 2025-06-26
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-10-21: |tipo: controlLechero|litros: 30|
+
+ID: 80
+RP: 80
+Ultima: 2025-06-12
+Eventos:
+- 2025-10-21: |tipo: controlLechero|litros: 28|
+
+ID: 82
+RP: 82
+Ultima: 2025-10-31
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3503
+RP: 3503
+Ultima: 2025-03-18
+Eventos:
+- 2025-10-14: |tipo: inseminacion|toro: HARVEY|
 - 2025-11-24: |tipo: controlLechero|litros: 32|
 
 ID: 3511
@@ -54,6 +217,981 @@ Eventos:
 - 2025-11-06: |tipo: controlLechero|litros: 14|
 - 2025-11-24: |tipo: controlLechero|litros: 18|
 
+ID: 3523
+RP: 3523
+Ultima: 2025-05-16
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-09-09: |tipo: inseminacion|toro: HIGHCARD|
+- 2025-10-14: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3536
+RP: 3536
+Ultima: 2025-05-05
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-06-27: |tipo: inseminacion|toro: JETSTREAM|
+- 2025-08-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 3538
+RP: 3538
+Ultima: 2024-11-26
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-23: |tipo: inseminacion|toro: HUGO|
+- 2025-12-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 3543
+RP: 3543
+Ultima: 2025-03-19
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3560
+RP: 3560
+Ultima: 2025-08-14
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3563
+RP: 3563
+Ultima: 2025-06-15
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3568
+RP: 3568
+Ultima: 2025-07-01
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 44|
+
+ID: 3569
+RP: 3569
+Ultima: 2025-02-15
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3574
+RP: 3574
+Ultima: 2025-05-01
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
+ID: 3576
+RP: 3576
+Ultima: 2025-11-04
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3580
+RP: 3580
+Ultima: 2025-08-11
+Eventos:
+- 2025-09-30: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3581
+RP: 3581
+Ultima: 2025-07-12
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
+ID: 3588
+RP: 3588
+Ultima: 2025-05-24
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 3590
+RP: 3590
+Ultima: 2025-06-24
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3602
+RP: 3602
+Ultima: 2025-04-02
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3603
+RP: 3603
+Ultima: 2025-06-12
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3612
+RP: 3612
+Ultima: 2025-05-09
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
+ID: 3613
+RP: 3613
+Ultima: 2025-02-28
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 20|
+
+ID: 3616
+RP: 3616
+Ultima: 2025-05-22
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 50|
+
+ID: 3618
+RP: 3618
+Ultima: 2025-08-06
+Eventos:
+- 2025-10-14: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3622
+RP: 3622
+Ultima: 2024-10-29
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3630
+RP: 3630
+Ultima: 2025-05-14
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 3633
+RP: 3633
+Ultima: 2024-11-26
+EstadoRepro: PreÃ±ada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: PreÃ±ada|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3634
+RP: 3634
+Ultima: 2025-08-21
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3635
+RP: 3635
+Ultima: 2025-08-12
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 38|
+
+ID: 3636
+RP: 3636
+Ultima: 2025-03-14
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3637
+RP: 3637
+Ultima: 2025-05-25
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 3640
+RP: 3640
+Ultima: 2025-04-20
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3642
+RP: 3642
+Ultima: 2025-05-14
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3651
+RP: 3651
+Ultima: 2025-05-16
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3653
+RP: 3653
+Ultima: 2025-05-21
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3658
+RP: 3658
+Ultima: 2025-08-15
+Eventos:
+- 2025-09-30: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 42|
+
+ID: 3662
+RP: 3662
+Ultima: 2025-02-24
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 3663
+RP: 3663
+Ultima: 2024-12-21
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3667
+RP: 3667
+Ultima: 2024-11-05
+Eventos:
+- 2024-12-17: |tipo: sanidad|detalle: VENTA|
+
+ID: 3672
+RP: 3672
+Ultima: 2025-09-21
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3674
+RP: 3674
+Ultima: 2025-04-18
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 26|
+
+ID: 3680
+RP: 3680
+Ultima: 2024-07-30
+Eventos:
+- 2025-12-09: |tipo: sanidad|detalle: VENTA|
+
+ID: 3681
+RP: 3681
+Ultima: 2025-10-07
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3682
+RP: 3682
+Ultima: 2025-06-20
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3684
+RP: 3684
+Ultima: 2025-06-02
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3686
+RP: 3686
+Ultima: 2024-11-13
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 24|
+
+ID: 3688
+RP: 3688
+Ultima: 2025-02-17
+Eventos:
+- 2025-12-09: |tipo: sanidad|detalle: VENTA|
+
+ID: 3695
+RP: 3695
+Ultima: 2025-06-01
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
+ID: 3697
+RP: 3697
+Ultima: 2025-05-17
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3700
+RP: 3700
+Ultima: 2024-08-19
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 26|
+
+ID: 3702
+RP: 3702
+Ultima: 2025-10-26
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 42|
+
+ID: 3704
+RP: 3704
+Ultima: 2025-09-15
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 39|
+
+ID: 3709
+RP: 3709
+Ultima: 2025-05-30
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3716
+RP: 3716
+Ultima: 2025-05-26
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3721
+RP: 3721
+Ultima: 2024-07-28
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 22|
+
+ID: 3722
+RP: 3722
+Ultima: 2025-12-09
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3726
+RP: 3726
+Ultima: 2024-11-26
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3727
+RP: 3727
+Ultima: 2025-03-10
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 3728
+RP: 3728
+Ultima: 2025-10-13
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 38|
+
+ID: 3729
+RP: 3729
+Ultima: 2025-04-09
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 3735
+RP: 3735
+Ultima: 2025-03-24
+Eventos:
+- 2025-05-07: |tipo: sanidad|detalle: VENTA|
+
+ID: 3744
+RP: 3744
+Ultima: 2025-02-27
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3746
+RP: 3746
+Ultima: 2025-03-11
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3748
+RP: 3748
+Ultima: 2024-12-07
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3749
+RP: 3749
+Ultima: 2023-12-12
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 23|
+
+ID: 3755
+RP: 3755
+Ultima: 2025-08-29
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3756
+RP: 3756
+Ultima: 2024-11-09
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 26|
+
+ID: 3761
+RP: 3761
+Ultima: 2025-06-04
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3763
+RP: 3763
+Ultima: 2025-06-23
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3764
+RP: 3764
+Ultima: 2025-03-23
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3767
+RP: 3767
+Ultima: 2025-06-10
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3768
+RP: 3768
+Ultima: 2025-04-26
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3771
+RP: 3771
+Ultima: 2025-09-16
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 41|
+
+ID: 3773
+RP: 3773
+Ultima: 2025-05-11
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3774
+RP: 3774
+Ultima: 2025-04-23
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
+ID: 3776
+RP: 3776
+Ultima: 2025-07-16
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3780
+RP: 3780
+Ultima: 2025-08-21
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 3782
+RP: 3782
+Ultima: 2025-06-21
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3783
+RP: 3783
+Ultima: 2024-05-22
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 26|
+
+ID: 3784
+RP: 3784
+Ultima: 2024-06-07
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 24|
+
+ID: 3787
+RP: 3787
+Ultima: 2024-06-16
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3790
+RP: 3790
+Ultima: 2025-07-28
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3791
+RP: 3791
+Ultima: 2025-04-24
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3792
+RP: 3792
+Ultima: 2024-05-02
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 25|
+
+ID: 3796
+RP: 3796
+Ultima: 2025-05-25
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3797
+RP: 3797
+Ultima: 2024-05-11
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 3800
+RP: 3800
+Ultima: 2025-06-27
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3802
+RP: 3802
+Ultima: 2025-08-30
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3803
+RP: 3803
+Ultima: 2024-06-08
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3804
+RP: 3804
+Ultima: 2025-08-04
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3805
+RP: 3805
+Ultima: 2025-07-26
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3810
+RP: 3810
+Ultima: 2025-10-08
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 40|
+
+ID: 3815
+RP: 3815
+Ultima: 2025-07-01
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3818
+RP: 3818
+Ultima: 2025-08-11
+Eventos:
+- 2025-10-14: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3819
+RP: 3819
+Ultima: 2025-06-09
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3820
+RP: 3820
+Ultima: 2025-08-29
+Eventos:
+- 2025-10-14: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 38|
+
+ID: 3823
+RP: 3823
+Ultima: 2025-06-13
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3825
+RP: 3825
+Ultima: 2025-07-29
+Eventos:
+- 2025-09-30: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3827
+RP: 3827
+Ultima: 2025-06-25
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3828
+RP: 3828
+Ultima: 2025-07-21
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3830
+RP: 3830
+Ultima: 2025-08-18
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3831
+RP: 3831
+Ultima: 2024-09-01
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 25|
+
+ID: 3833
+RP: 3833
+Ultima: 2024-09-10
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3836
+RP: 3836
+Ultima: 2024-12-31
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 24|
+
+ID: 3840
+RP: 3840
+Ultima: 2024-10-19
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3841
+RP: 3841
+Ultima: 2024-12-04
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3844
+RP: 3844
+Ultima: 2025-08-22
+Eventos:
+- 2025-09-30: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3845
+RP: 3845
+Ultima: 2024-11-27
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 26|
+
+ID: 3847
+RP: 3847
+Ultima: 2025-11-15
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 38|
+
+ID: 3852
+RP: 3852
+Ultima: 2025-03-20
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3857
+RP: 3857
+Ultima: 2025-04-23
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3863
+RP: 3863
+Ultima: 2025-11-25
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
+ID: 3864
+RP: 3864
+Ultima: 2025-03-15
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3866
+RP: 3866
+Ultima: 2025-04-03
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3868
+RP: 3868
+Ultima: 2025-05-25
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3870
+RP: 3870
+Ultima: 2025-04-02
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 3872
+RP: 3872
+Ultima: 2025-03-06
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3875
+RP: 3875
+Ultima: 2025-04-12
+EstadoRepro: Preñada
+Eventos:
+- 2025-08-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3878
+RP: 3878
+Ultima: 2025-03-26
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3879
+RP: 3879
+Ultima: 2025-06-11
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3880
+RP: 3880
+Ultima: 2025-03-16
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 26|
+
+ID: 3881
+RP: 3881
+Ultima: 2025-03-28
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 28|
+
+ID: 3883
+RP: 3883
+Ultima: 2025-04-22
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3884
+RP: 3884
+Ultima: 2025-03-29
+Eventos:
+- 2025-09-30: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3886
+RP: 3886
+Ultima: 2025-04-23
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 27|
+
+ID: 3887
+RP: 3887
+Ultima: 2025-05-15
+Eventos:
+- 2025-09-30: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3888
+RP: 3888
+Ultima: 2025-05-07
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3892
+RP: 3892
+Ultima: 2025-06-27
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3893
+RP: 3893
+Ultima: 2025-08-23
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3894
+RP: 3894
+Lactancia: 1
+Ultima: 2025-06-11
+FPP: 2026-06-18
+Eventos:
+- 2025-09-13: |tipo: inseminacion|toro: MOLOKO|servicios: 1|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-10-21: |tipo: controlLechero|litros: 35|
+- 2025-11-06: |tipo: controlLechero|litros: 36|
+- 2025-11-24: |tipo: controlLechero|litros: 38|
+
+ID: 3896
+RP: 3896
+Ultima: 2025-08-10
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3900
+RP: 3900
+Ultima: 2025-05-28
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
 ID: 3902
 RP: 3902
 Lactancia: 1
@@ -66,6 +1204,130 @@ Eventos:
 - 2025-11-06: |tipo: controlLechero|litros: 34|
 - 2025-11-24: |tipo: controlLechero|litros: 33|
 
+ID: 3904
+RP: 3904
+Lactancia: 1
+Ultima: 2025-07-05
+Eventos:
+- 2025-11-01: |tipo: inseminacion|toro: IKON|servicios: 4|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-10-21: |tipo: controlLechero|litros: 20|
+- 2025-11-06: |tipo: controlLechero|litros: 34|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3906
+RP: 3906
+Ultima: 2025-06-15
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-14: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3908
+RP: 3908
+Ultima: 2025-08-27
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3913
+RP: 3913
+Ultima: 2025-05-29
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3914
+RP: 3914
+Ultima: 2025-05-29
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-11: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3915
+RP: 3915
+Ultima: 2025-06-21
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3916
+RP: 3916
+Ultima: 2025-05-09
+EstadoRepro: Preñada
+Eventos:
+- 2025-09-30: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3924
+RP: 3924
+Ultima: 2025-08-26
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3925
+RP: 3925
+Ultima: 2025-07-09
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 30|
+
+ID: 3931
+RP: 3931
+Ultima: 2025-07-13
+EstadoRepro: Preñada
+Eventos:
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3934
+RP: 3934
+Ultima: 2025-10-22
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 38|
+
+ID: 3937
+RP: 3937
+Lactancia: 1
+Ultima: 2025-12-02
+Eventos:
+- 2025-12-09: |tipo: sanidad|detalle: NO INSEMINAR|
+
+ID: 3938
+RP: 3938
+Ultima: 2025-08-12
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3939
+RP: 3939
+Ultima: 2025-07-08
+EstadoRepro: Preñada
+Eventos:
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3940
+RP: 3940
+Ultima: 2025-09-05
+Eventos:
+- 2025-12-09: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 40|
+
+ID: 3942
+RP: 3942
+Ultima: 2025-10-30
+Eventos:
+- 2025-11-11: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
 ID: 3944
 RP: 3944
 Lactancia: 1
@@ -77,9 +1339,63 @@ Eventos:
 - 2025-11-06: |tipo: controlLechero|litros: 38|
 - 2025-11-24: |tipo: controlLechero|litros: 36|
 
-ID: 3937
-RP: 3937
-Lactancia: 1
-Ultima: 2025-12-02
+ID: 3946
+RP: 3946
+Ultima: 2025-08-28
 Eventos:
-- 2025-12-09: |tipo: sanidad|detalle: NO INSEMINAR|
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3947
+RP: 3947
+Ultima: 2025-08-20
+Eventos:
+- 2025-10-31: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 29|
+
+ID: 3949
+RP: 3949
+Ultima: 2025-10-24
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 3950
+RP: 3950
+Ultima: 2025-08-18
+EstadoRepro: Preñada
+Eventos:
+- 2025-11-25: |tipo: tacto|resultado: Preñada|
+- 2025-11-24: |tipo: controlLechero|litros: 31|
+
+ID: 3956
+RP: 3956
+Ultima: 2025-10-23
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: HARVEY|
+- 2025-11-24: |tipo: controlLechero|litros: 35|
+
+ID: 3962
+RP: 3962
+Ultima: 2025-11-24
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 39|
+
+ID: 3963
+RP: 3963
+Ultima: 2025-12-05
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 42|
+
+ID: 3970
+RP: 3970
+Ultima: 2025-12-04
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 45|
+
+ID: 3975
+RP: 3975
+Ultima: 2025-11-23
+Eventos:
+- 2025-11-24: |tipo: controlLechero|litros: 37|
+
