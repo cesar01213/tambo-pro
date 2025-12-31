@@ -129,7 +129,7 @@ export default function TeamManagementModal({ isOpen, onClose }: { isOpen: boole
 
                             <div className="bg-indigo-50 p-6 rounded-[2.5rem] border-2 border-indigo-100 space-y-4">
                                 <div>
-                                    <p className="text-[9px] font-black text-indigo-900 uppercase tracking-[0.3em] mb-2 text-center">Código de Mi Establecimiento</p>
+                                    <p className="text-[9px] font-black text-indigo-900 uppercase tracking-[0.3em] mb-2 text-center">CÓDIGO DE INVITACIÓN PARA PERSONAL</p>
                                     <div className="bg-white border-2 border-indigo-200 p-4 rounded-2xl flex items-center justify-between gap-3 shadow-sm">
                                         <code className="text-[10px] font-black text-indigo-600 truncate flex-1 uppercase tracking-tighter">
                                             {userProfile?.establecimientoId}
@@ -137,16 +137,16 @@ export default function TeamManagementModal({ isOpen, onClose }: { isOpen: boole
                                         <button
                                             onClick={() => {
                                                 navigator.clipboard.writeText(userProfile?.establecimientoId || '');
-                                                alert('¡Código copiado! Pasáselo a tu equipo.');
+                                                alert('¡Código copiado! Pásaselo a tu equipo.');
                                             }}
                                             className="bg-indigo-600 text-white px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest active:scale-90 transition-all shadow-md"
                                         >
-                                            COPIAR
+                                            COPIAR CÓDIGO
                                         </button>
                                     </div>
                                 </div>
                                 <p className="text-[11px] text-indigo-700 font-medium leading-relaxed text-center px-2">
-                                    Copiá y pasales este código a tus colaboradores. Ellos podrán pegarlo al entrar a la app para vincularse a tu tambo.
+                                    Comparte este código con tus empleados. Ellos deben usar la opción <strong>"ENTRAR CON CÓDIGO"</strong> en la pantalla de inicio y pegarlo cuando se les pida.
                                 </p>
                             </div>
                         </div>
