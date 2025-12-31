@@ -77,7 +77,7 @@ export default function EstablishmentSetup() {
                     id: user.id,
                     establecimiento_id: est.id,
                     role: userProfile?.role || 'tambero', // Mantener rol si ya tiene uno
-                    email: user.email
+                    email: user.email || `personal-${user.id.slice(0, 6)}@tambo.anon`
                 });
 
             if (profError) throw profError;
