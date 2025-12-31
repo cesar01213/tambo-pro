@@ -1,0 +1,85 @@
+ID: 3894
+RP: 3894
+Lactancia: 1
+Ultima: 2025-06-11
+FPP: 2026-06-18
+Eventos:
+- 2025-09-13: |tipo: inseminacion|toro: MOLOKO|servicios: 1|
+- 2025-10-31: |tipo: tacto|resultado: Preñada|
+- 2025-10-21: |tipo: controlLechero|litros: 35|
+- 2025-11-06: |tipo: controlLechero|litros: 36|
+- 2025-11-24: |tipo: controlLechero|litros: 38|
+
+ID: 3904
+RP: 3904
+Lactancia: 1
+Ultima: 2025-07-05
+Eventos:
+- 2025-11-01: |tipo: inseminacion|toro: IKON|servicios: 4|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-10-21: |tipo: controlLechero|litros: 20|
+- 2025-11-06: |tipo: controlLechero|litros: 34|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 37
+RP: 37
+Lactancia: 4
+Ultima: 2025-05-05
+Eventos:
+- 2025-11-25: |tipo: inseminacion|toro: IKON|servicios: 6|
+- 2025-12-09: |tipo: tacto|resultado: Vacía|detalle: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 45|
+- 2025-11-06: |tipo: controlLechero|litros: 41|
+- 2025-11-24: |tipo: controlLechero|litros: 34|
+
+ID: 53
+RP: 53
+Lactancia: 2
+Ultima: 2025-02-25
+Eventos:
+- 2025-11-14: |tipo: inseminacion|toro: IKON|servicios: 3|
+- 2025-12-09: |tipo: tacto|resultado: Vacía|detalle: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 36|
+- 2025-11-06: |tipo: controlLechero|litros: 33|
+- 2025-11-24: |tipo: controlLechero|litros: 32|
+
+ID: 3511
+RP: 3511
+Lactancia: 7
+Ultima: 2024-08-06
+Eventos:
+- 2025-08-27: |tipo: inseminacion|toro: HIGHCARD|servicios: 1|
+- 2025-12-09: |tipo: sanidad|detalle: VENTA|
+- 2025-10-21: |tipo: controlLechero|litros: 18|
+- 2025-11-06: |tipo: controlLechero|litros: 14|
+- 2025-11-24: |tipo: controlLechero|litros: 18|
+
+ID: 3902
+RP: 3902
+Lactancia: 1
+Ultima: 2025-05-15
+FPP: 2026-09-30
+Eventos:
+- 2025-09-30: |tipo: inseminacion|toro: MOLOKO|servicios: 1|
+- 2025-12-09: |tipo: tacto|resultado: Preñada|
+- 2025-10-21: |tipo: controlLechero|litros: 20|
+- 2025-11-06: |tipo: controlLechero|litros: 34|
+- 2025-11-24: |tipo: controlLechero|litros: 33|
+
+ID: 3944
+RP: 3944
+Lactancia: 1
+Ultima: 2025-09-01
+Eventos:
+- 2025-11-21: |tipo: inseminacion|toro: HUGO|servicios: 2|
+- 2025-12-09: |tipo: tacto|resultado: Vacía|detalle: HARVEY|
+- 2025-10-21: |tipo: controlLechero|litros: 37|
+- 2025-11-06: |tipo: controlLechero|litros: 38|
+- 2025-11-24: |tipo: controlLechero|litros: 36|
+
+ID: 3937
+RP: 3937
+Lactancia: 1
+Ultima: 2025-12-02
+Eventos:
+- 2025-12-09: |tipo: sanidad|detalle: NO INSEMINAR|
