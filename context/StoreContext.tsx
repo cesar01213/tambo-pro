@@ -44,53 +44,71 @@ const mapDbToCow = (db: any): Cow => ({
     establecimientoId: db.establecimiento_id
 });
 
-const mapEventToDb = (e: Evento) => ({
-    id: e.id,
-    cow_id: e.cowId,
-    tipo: e.tipo,
-    fecha: e.fecha,
-    detalle: e.detalle,
-    grado_mastitis: e.gradoMastitis,
-    cuartos: e.cuartos,
-    medicamento: e.medicamento,
-    dias_retiro: e.diasRetiro,
-    fecha_liberacion: e.fechaLiberacion,
-    resultado_tacto: e.resultadoTacto,
-    meses_gestacion: e.mesesGestacion,
-    litros: e.litros,
-    grasa: e.grasa,
-    proteina: e.proteina,
-    intensidad_celo: e.intensidadCelo,
-    sexo_cria: e.sexoCria,
-    peso_cria: e.pesoCria,
-    destino_cria: e.destinoCria,
-    establecimiento_id: e.establecimientoId,
-    recorded_by: e.recordedBy
-});
+const mapEventToDb = (e: Evento) => {
+    // Si hay un número de servicio, lo agregamos al detalle para visibilidad rápida
+    let finalDetalle = e.detalle;
+    if (e.numeroServicio && !e.detalle.includes(`[Servicio #${e.numeroServicio}]`)) {
+        finalDetalle = `[Servicio #${e.numeroServicio}] ${e.detalle}`;
+    }
 
-const mapDbToEvent = (db: any): Evento => ({
-    id: db.id,
-    cowId: db.cow_id,
-    tipo: db.tipo,
-    fecha: db.fecha,
-    detalle: db.detalle,
-    gradoMastitis: db.grado_mastitis || undefined,
-    cuartos: db.cuartos || [],
-    medicamento: db.medicamento || '',
-    diasRetiro: db.dias_retiro || 0,
-    fechaLiberacion: db.fecha_liberacion || undefined,
-    resultadoTacto: db.resultado_tacto || undefined,
-    mesesGestacion: db.meses_gestacion || undefined,
-    litros: db.litros || undefined,
-    grasa: db.grasa || undefined,
-    proteina: db.proteina || undefined,
-    intensidadCelo: db.intensidad_celo || undefined,
-    sexoCria: db.sexo_cria || undefined,
-    pesoCria: db.peso_cria || undefined,
-    destinoCria: db.destino_cria || undefined,
-    establecimientoId: db.establecimiento_id,
-    recordedBy: db.recorded_by
-});
+    return {
+        id: e.id,
+        cow_id: e.cowId,
+        tipo: e.tipo,
+        fecha: e.fecha,
+        detalle: finalDetalle,
+        grado_mastitis: e.gradoMastitis,
+        cuartos: e.cuartos,
+        medicamento: e.medicamento,
+        dias_retiro: e.diasRetiro,
+        fecha_liberacion: e.fechaLiberacion,
+        resultado_tacto: e.resultadoTacto,
+        meses_gestacion: e.mesesGestacion,
+        litros: e.litros,
+        grasa: e.grasa,
+        proteina: e.proteina,
+        // Usamos intensidad_celo para guardar el nro de servicio como sugirió el user
+        intensidad_celo: e.numeroServicio ? e.numeroServicio.toString() : e.intensidadCelo,
+        sexo_cria: e.sexoCria,
+        peso_cria: e.pesoCria,
+        destino_cria: e.destinoCria,
+        establecimiento_id: e.establecimientoId,
+        recorded_by: e.recordedBy
+    };
+};
+
+const mapDbToEvent = (db: any): Evento => {
+    // Intentar recuperar el nro de servicio de intensidad_celo (si es numérico)
+    let numeroServicio = undefined;
+    if (db.intensidad_celo && !isNaN(parseInt(db.intensidad_celo))) {
+        numeroServicio = parseInt(db.intensidad_celo);
+    }
+
+    return {
+        id: db.id,
+        cowId: db.cow_id,
+        tipo: db.tipo,
+        fecha: db.fecha,
+        detalle: db.detalle,
+        gradoMastitis: db.grado_mastitis || undefined,
+        cuartos: db.cuartos || [],
+        medicamento: db.medicamento || '',
+        diasRetiro: db.dias_retiro || 0,
+        fechaLiberacion: db.fecha_liberacion || undefined,
+        resultadoTacto: db.resultado_tacto || undefined,
+        mesesGestacion: db.meses_gestacion || undefined,
+        litros: db.litros || undefined,
+        grasa: db.grasa || undefined,
+        proteina: db.proteina || undefined,
+        intensidadCelo: isNaN(parseInt(db.intensidad_celo)) ? db.intensidad_celo : undefined,
+        numeroServicio,
+        sexoCria: db.sexo_cria || undefined,
+        pesoCria: db.peso_cria || undefined,
+        destinoCria: db.destino_cria || undefined,
+        establecimientoId: db.establecimiento_id,
+        recordedBy: db.recorded_by
+    };
+};
 
 interface StoreState {
     cows: Cow[];

@@ -54,6 +54,7 @@ export interface Evento {
     litros?: number;
     grasa?: number;
     proteina?: number;
+    numeroServicio?: number; // NUEVO: Para guardar la columna "Nº" de la planilla
     establecimientoId?: string;
     recordedBy?: string;
 }

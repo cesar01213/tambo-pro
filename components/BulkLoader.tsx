@@ -44,9 +44,10 @@ export default function BulkLoader({ isOpen, onClose }: Props) {
         let inEventsBlock = false;
 
         lines.forEach(line => {
-            if (!line || line.startsWith('---')) return;
+            // Limpieza básica: ignorar líneas vacías, separadores o etiquetas markdown
+            if (!line || line.startsWith('---') || line.startsWith('```')) return;
 
-            // Detectar inicio de una nueva vaca (ID: [valor] o solo número)
+            // Detectar inicio de una nueva vaca (ID: [valor] o RP: [valor])
             const idMatch = line.match(/^(?:ID:?\s*|#\s*)?(\w+)$/i);
             const isJustIdLine = idMatch && !line.includes(':') && !line.includes('|');
             const isExplicitIdLine = line.toLowerCase().startsWith('id:');
@@ -72,25 +73,33 @@ export default function BulkLoader({ isOpen, onClose }: Props) {
 
             if (!currentCow) return;
 
-            // Detectar Propiedades
-            if (line.toLowerCase().startsWith('rp:')) currentCow.rp = line.split(':')[1].trim();
-            if (line.toLowerCase().startsWith('raza:')) currentCow.raza = line.split(':')[1].trim() as Raza;
-            if (line.toLowerCase().startsWith('senas:') || line.toLowerCase().startsWith('señas:'))
+            // Detectar Propiedades de la Vaca
+            const lowerLine = line.toLowerCase();
+            if (lowerLine.startsWith('rp:')) currentCow.rp = line.split(':')[1].trim();
+            if (lowerLine.startsWith('raza:')) currentCow.raza = line.split(':')[1].trim() as Raza;
+
+            // DETECTOR DE FECHAS CLAVE
+            if (lowerLine.startsWith('ultima:') || lowerLine.startsWith('última:')) {
+                currentCow.ultimoParto = line.split(':')[1].trim();
+            }
+            if (lowerLine.startsWith('fpp:') || lowerLine.startsWith('prox:') || lowerLine.startsWith('próx:')) {
+                currentCow.fpp = line.split(':')[1].trim();
+            }
+
+            if (lowerLine.startsWith('senas:') || lowerLine.startsWith('señas:'))
                 currentCow.senasParticulares = line.split(':')[1].trim();
-            if (line.toLowerCase().startsWith('categoria:') || line.toLowerCase().startsWith('categoría:'))
+            if (lowerLine.startsWith('categoria:') || lowerLine.startsWith('categoría:'))
                 currentCow.categoria = line.split(':')[1].trim() as Categoria;
-            if (line.toLowerCase().startsWith('estado:')) {
+            if (lowerLine.startsWith('estado:')) {
                 const val = line.split(':')[1].trim();
                 if (['Lactancia', 'Seca'].includes(val)) currentCow.estado = val as any;
                 if (['Vacía', 'Inseminada', 'Preñada', 'Seca'].includes(val)) currentCow.estadoRepro = val as any;
             }
-            if (line.toLowerCase().startsWith('partos:')) currentCow.partosTotales = parseInt(line.split(':')[1].trim()) || 0;
-            if (line.toLowerCase().startsWith('fechanac:')) currentCow.fechaNacimiento = line.split(':')[1].trim();
-            if (line.toLowerCase().startsWith('padre:')) currentCow.padre = line.split(':')[1].trim();
-            if (line.toLowerCase().startsWith('madre:')) currentCow.madre = line.split(':')[1].trim();
+            if (lowerLine.startsWith('partos:')) currentCow.partosTotales = parseInt(line.split(':')[1].trim()) || 0;
+            if (lowerLine.startsWith('fechanac:')) currentCow.fechaNacimiento = line.split(':')[1].trim();
 
             // Detectar Bloque de Eventos
-            if (line.toLowerCase().startsWith('eventos:')) {
+            if (lowerLine.startsWith('eventos:')) {
                 inEventsBlock = true;
                 return;
             }
@@ -98,18 +107,15 @@ export default function BulkLoader({ isOpen, onClose }: Props) {
             // Procesar Eventos (líneas que empiezan con -)
             if (inEventsBlock && line.startsWith('-')) {
                 const eventLine = line.substring(1).trim();
-                // Formato esperado: YYYY-MM-DD HH:MM: |tipo: xxx|detalle: xxx|...|
-                let datePart = eventLine.split('|')[0].trim();
-                // Limpiar dos puntos residuales al final de la fecha (ej: "2025-12-27 08:30:")
-                datePart = datePart.replace(/:$/, '');
+                let datePart = eventLine.split('|')[0].trim().replace(/:$/, '');
                 const propsPart = eventLine.includes('|') ? eventLine.substring(eventLine.indexOf('|')) : '';
 
                 const event: Evento = {
                     id: Date.now() + Math.random(),
                     cowId: currentCow.id,
                     fecha: datePart || new Date().toISOString(),
-                    tipo: 'celo', // default
-                    detalle: 'Carga masiva historial'
+                    tipo: 'celo',
+                    detalle: 'Carga veterinaria sincronizada'
                 };
 
                 // Parsear propiedades del evento |prop: valor|
@@ -126,24 +132,28 @@ export default function BulkLoader({ isOpen, onClose }: Props) {
                     if (key === 'resultado') event.resultadoTacto = val as any;
                     if (key === 'mesesGesta') event.mesesGestacion = parseInt(val);
                     if (key === 'toro') event.toro = val;
+                    if (key === 'servicio') event.numeroServicio = parseInt(val);
                 });
 
                 events.push(event);
 
-                // Auto-actualizar estado de la vaca si el evento es relevante
-                if (event.tipo === 'parto') {
-                    currentCow.estado = 'Lactancia';
-                    currentCow.ultimoParto = event.fecha;
-                    currentCow.estadoRepro = 'Vacía'; // Al parir está vacía
-                }
-                if (event.tipo === 'inseminacion') {
-                    currentCow.estadoRepro = 'Inseminada';
-                }
-                if (event.tipo === 'tacto') {
-                    if (event.resultadoTacto === 'Preñada') {
-                        currentCow.estadoRepro = 'Preñada';
-                    } else if (event.resultadoTacto === 'Vacía') {
+                // ACTUALIZACIÓN DE ESTADOS (Con Protección de Leche)
+                // Solo actualizamos si NO es un evento de control lechero
+                if (event.tipo !== 'controlLechero') {
+                    if (event.tipo === 'parto') {
+                        currentCow.estado = 'Lactancia';
+                        currentCow.ultimoParto = event.fecha;
                         currentCow.estadoRepro = 'Vacía';
+                    }
+                    if (event.tipo === 'inseminacion') {
+                        currentCow.estadoRepro = 'Inseminada';
+                    }
+                    if (event.tipo === 'tacto') {
+                        if (event.resultadoTacto === 'Preñada') {
+                            currentCow.estadoRepro = 'Preñada';
+                        } else if (event.resultadoTacto === 'Vacía') {
+                            currentCow.estadoRepro = 'Vacía';
+                        }
                     }
                 }
             }
